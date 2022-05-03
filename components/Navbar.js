@@ -1,17 +1,28 @@
 import React from 'react'
-
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Link  from 'next/link'
+import { signOut, useSession} from 'next-auth/react'
 
 function Navbar() {
+
+const { data: session } = useSession()
+
   return (
     <nav className={styles.mainnav}>
         <ul>
-          <Link href='/'><a><li>Home</li></a></Link>
+          <Link href='/' ><li>Home</li></Link>
+          <Link href='/blog' ><li>Blog</li></Link>
+          <Link href='/about' ><li>Image Library</li></Link>
+          <Link href='/Image' ><li>Image Uploading</li></Link>
+           
+           
           
-           <Link href='/about'><a><li>About</li></a></Link>
-           <Link href='/blog'><a><li>Blog</li></a></Link>
-           <Link href='/contact'><a><li>Contact</li></a></Link>
+         <Link href='/todo' ><li>Crud</li></Link>
+         <Link href='/message' ><li>Message</li></Link>
+
+         <li><>
+        <button onClick={() => signOut()}>Sign out</button>
+      </></li>
         </ul>
       </nav> 
   )
