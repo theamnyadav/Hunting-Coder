@@ -11,7 +11,7 @@ export default function Home() {
   
   return (
     
-    <div className={styles.container}>
+    <div >
      
       <Head>
         <title>Hunting coder</title>
@@ -29,17 +29,17 @@ export default function Home() {
         </p>
 
 <div className="blogs">
-  <h2>Popular Blogs</h2>
+  <h2 >Popular Blogs</h2>
   <div className="blogItem">
-    <h3>How to learn javascript in 2022</h3>
+    <h3  className='text-xl font-bold'>How to learn javascript in 2022</h3>
     <p>Javascript is the language used to design for logic in wev </p>
     </div>
     <div className="blogItem">
-    <h3>How to learn javascript in 2022</h3>
+    <h3  className='text-xl font-bold'>How to learn javascript in 2022</h3>
     <p>Javascript is the language used to design for logic in wev </p>
     </div>
     <div className="blogItem">
-    <h3>How to learn javascript in 2022</h3>
+    <h3  className='text-xl font-bold'>How to learn javascript in 2022</h3>
     <p>Javascript is the language used to design for logic in wev </p>
     </div>
     </div>
