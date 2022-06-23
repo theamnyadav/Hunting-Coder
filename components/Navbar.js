@@ -19,7 +19,7 @@ const { data: session } = useSession()
           
          <Link className='hover:text-blue-500' href='/todo' ><li>Crud</li></Link>
          <Link className='hover:text-blue-500' href='/message' ><li>Blog</li></Link>
-
+          <Link className='hover:text-blue-500' href='/mysql'>MYsql</Link>
          <li><>
         <button className='px-6
       py-2.5
